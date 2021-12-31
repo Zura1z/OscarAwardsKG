@@ -1,0 +1,118 @@
+@prefix iri: <http://www.oscarawards/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.oscarawards/nominee/['Emil_Jannings']> a iri:nominee ;
+    iri:hasBeenNominated iri:1928 ;
+    iri:hasCategories <http://www.oscarawards/cat/ACTOR> ;
+    iri:hasNomineeName "['Emil Jannings']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/The_Last_Command> .
+
+<http://www.oscarawards/nominee/['Gloria_Swanson']> a iri:nominee ;
+    iri:hasBeenNominated iri:1928 ;
+    iri:hasCategories <http://www.oscarawards/cat/ACTRESS> ;
+    iri:hasNomineeName "['Gloria Swanson']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/Sadie_Thompson> .
+
+<http://www.oscarawards/nominee/['Harry_Oliver']> a iri:nominee ;
+    iri:hasBeenNominated iri:1928 ;
+    iri:hasCategories <http://www.oscarawards/cat/ART_DIRECTION> ;
+    iri:hasNomineeName "['Harry Oliver']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/7th_Heaven> .
+
+<http://www.oscarawards/nominee/['Janet_Gaynor']> a iri:nominee ;
+    iri:hasBeenNominated iri:1928 ;
+    iri:hasCategories <http://www.oscarawards/cat/ACTRESS> ;
+    iri:hasNomineeName "['Janet Gaynor']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/7th_Heaven> .
+
+<http://www.oscarawards/nominee/['Louise_Dresser']> a iri:nominee ;
+    iri:hasBeenNominated iri:1928 ;
+    iri:hasCategories <http://www.oscarawards/cat/ACTRESS> ;
+    iri:hasNomineeName "['Louise Dresser']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/A_Ship_Comes_In> .
+
+<http://www.oscarawards/nominee/['Richard_Barthelmess']> a iri:nominee ;
+    iri:hasBeenNominated iri:1928 ;
+    iri:hasCategories <http://www.oscarawards/cat/ACTOR> ;
+    iri:hasNomineeName "['Richard Barthelmess']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/The_Noose> .
+
+<http://www.oscarawards/nominee/['Rochus_Gliese']> a iri:nominee ;
+    iri:hasBeenNominated iri:1928 ;
+    iri:hasCategories <http://www.oscarawards/cat/ART_DIRECTION> ;
+    iri:hasNomineeName "['Rochus Gliese']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/Sunrise> .
+
+<http://www.oscarawards/nominee/['William_Cameron_Menzies']> a iri:nominee ;
+    iri:hasBeenNominated iri:1928 ;
+    iri:hasCategories <http://www.oscarawards/cat/ART_DIRECTION> ;
+    iri:hasNomineeName "['William Cameron Menzies']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/The_Dove> .
+
+<http://www.oscarawards/nominee/['name']> a iri:nominee ;
+    iri:hasBeenNominated iri:year_ceremony ;
+    iri:hasCategories <http://www.oscarawards/cat/category> ;
+    iri:hasNomineeName "['name']"^^xsd:string ;
+    iri:hasResult iri:Losser ;
+    iri:nomineeBelongsTo <http://www.oscarawards/film/film> .
+
+<http://www.oscarawards/film/A_Ship_Comes_In> a iri:film ;
+    iri:hasFilmName "A Ship Comes In"^^xsd:string ;
+    iri:hasfilmYear "1927"^^xsd:int .
+
+<http://www.oscarawards/film/Sadie_Thompson> a iri:film ;
+    iri:hasFilmName "Sadie Thompson"^^xsd:string ;
+    iri:hasfilmYear "1927"^^xsd:int .
+
+<http://www.oscarawards/film/Sunrise> a iri:film ;
+    iri:hasFilmName "Sunrise"^^xsd:string ;
+    iri:hasfilmYear "1927"^^xsd:int .
+
+<http://www.oscarawards/film/The_Dove> a iri:film ;
+    iri:hasFilmName "The Dove"^^xsd:string ;
+    iri:hasfilmYear "1927"^^xsd:int .
+
+<http://www.oscarawards/film/The_Last_Command> a iri:film ;
+    iri:hasFilmName "The Last Command"^^xsd:string ;
+    iri:hasfilmYear "1927"^^xsd:int .
+
+<http://www.oscarawards/film/The_Noose> a iri:film ;
+    iri:hasFilmName "The Noose"^^xsd:string ;
+    iri:hasfilmYear "1927"^^xsd:int .
+
+<http://www.oscarawards/film/film> a iri:film ;
+    iri:hasFilmName "film"^^xsd:string ;
+    iri:hasfilmYear "year_film"^^xsd:int .
+
+iri:year_ceremony a iri:ceremomy ;
+    iri:ceremonyConsistsOf <http://www.oscarawards/cat/category> ;
+    iri:hasCeremonyNo "ceremony"^^xsd:int ;
+    iri:hasCeremonyYear "year_ceremony"^^xsd:int .
+
+<http://www.oscarawards/cat/category> a iri:category .
+
+<http://www.oscarawards/film/7th_Heaven> a iri:film ;
+    iri:hasFilmName "7th Heaven"^^xsd:string ;
+    iri:hasfilmYear "1927"^^xsd:int .
+
+<http://www.oscarawards/cat/ACTOR> a iri:category .
+
+<http://www.oscarawards/cat/ACTRESS> a iri:category .
+
+<http://www.oscarawards/cat/ART_DIRECTION> a iri:category .
+
+iri:1928 a iri:ceremomy ;
+    iri:ceremonyConsistsOf <http://www.oscarawards/cat/ACTOR>,
+        <http://www.oscarawards/cat/ACTRESS>,
+        <http://www.oscarawards/cat/ART_DIRECTION> ;
+    iri:hasCeremonyNo "1"^^xsd:int ;
+    iri:hasCeremonyYear "1928"^^xsd:int .
+
