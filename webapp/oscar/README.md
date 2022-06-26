@@ -1,5 +1,5 @@
 ### Run these commands to start django app
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
+python manage.py makemigrations <br>
+python manage.py migrate <br>
+python manage.py createsuperuser <br>
 python manage.py runserver
